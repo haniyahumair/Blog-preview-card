@@ -1,5 +1,7 @@
 :root{
     --primary-color: hsl(47, 88%, 63%);
+    --text-color-1: hsl(0, 0%, 42%);
+    --text-color-2: hsl(0, 0%, 7%);
 }
 
 body{
@@ -7,6 +9,9 @@ body{
     margin: 0;
     padding: 0;
     background-color: hsl(47, 88%, 63%);
+    font-family: "Figtree", sans-serif;
+    color: var(--text-color-2);
+    font-weight: 500;
 }
 
 .card{
@@ -38,8 +43,46 @@ body{
     border-radius: 3px;
     border: none;
     padding: 7px;
+    font-weight: 800;
 }
 
 .card-information{
     margin-left: 15px;
 }
+
+.publish-date{
+    font-size: 0.9rem;
+    color: var(--text-color-2);
+}
+
+.card-text{
+    font-size: 1rem;
+    word-spacing: 0.1rem;
+    color: var(--text-color-1);
+}
+
+.card-information h2{
+    font-weight: 800;
+}
+
+.greg-info{
+    display: flex;
+    flex-direction: row;
+    flex: content;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    gap: 12px;
+}
+
+.greg-info img{
+    width: 3vw;
+  height: 3vw;
+  object-fit: cover;
+}
+
+.greg-info p{
+    margin-top: 10px;
+    font-weight: 800;
+}
+
+/*Add animated/hover features*/
