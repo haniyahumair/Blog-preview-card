@@ -76,14 +76,23 @@ body{
 }
 
 .greg-info img{
-    width: 3vw;
-  height: 3vw;
+    width: max(42px, 3vw);
+    height: max(42px, 3vw);
   object-fit: cover;
 }
 
 .greg-info p{
     margin-top: 10px;
     font-weight: 800;
+}
+
+.attribution{
+    text-align: center;
+}
+
+.attribution a{
+    text-decoration: none;
+    color: var(--text-color-2);
 }
 
 /*Add animated/hover features*/
@@ -101,4 +110,11 @@ body{
 
 .card:hover .card-information h2 {
     color: var(--primary-color);
+}
+
+/*mobile view*/
+@media (max-width: 768px) {
+    .card:hover {
+        box-shadow: 8px 8px;
+    }
 }
