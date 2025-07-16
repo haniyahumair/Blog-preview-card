@@ -22,6 +22,7 @@ body{
     border-radius: 15px;
     border: 1px solid black;
     overflow: hidden;
+    box-shadow: 7px 7px;
 }
 
 .card-img img {
@@ -86,3 +87,18 @@ body{
 }
 
 /*Add animated/hover features*/
+.card {
+    transition: box-shadow 0.2s ease-in;
+}
+
+.card .card-information h2 {
+    transition: color 0.3s ease-in;
+}
+
+.card:hover {
+    box-shadow: 15px 15px;
+}
+
+.card:hover .card-information h2 {
+    color: var(--primary-color);
+}
